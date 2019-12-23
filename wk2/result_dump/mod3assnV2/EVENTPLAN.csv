@@ -1,0 +1,12 @@
+﻿PLANNO,EVENTNO,WORKDATE,NOTES,ACTIVITY,EMPNO
+P100,E100,2018-10-25,Standard operation,Operation,E102
+P101,E104,2018-12-03,Watch for gate crashers,Operation,E100
+P102,E105,2018-12-05,Standard operation,Operation,E102
+P103,E101,2018-10-26,Standard cleanup,Cleanup,E101
+P104,E101,2018-10-26,Standard cleanup,Cleanup,E101
+P105,E100,2018-10-25,Light cleanup,Cleanup,E101
+P199,E102,2018-12-10,ABC,Operation,E101
+P299,E101,2018-10-26,,Operation,E101
+P349,E106,2018-12-12,,Setup,E101
+P85,E100,2018-10-25,Standard operation,Cleanup,E102
+P95,E101,2018-10-26,Extra security,Cleanup,E102

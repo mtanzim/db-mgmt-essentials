@@ -1,0 +1,5 @@
+﻿EMPNO,EMPNAME,DEPARTMENT,EMAIL,PHONE
+E100,Chuck Coordinator,Administration,chuck@colorado.edu,3-1111
+E101,Mary Manager,Football,mary@colorado.edu,5-1111
+E102,Sally Supervisor,Planning,sally@colorado.edu,3-2222
+E103,Alan Administrator,Administration,alan@colorado.edu,3-3333

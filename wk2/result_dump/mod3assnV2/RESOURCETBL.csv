@@ -1,0 +1,7 @@
+﻿RESNO,RESNAME,RATE
+R100,attendant,10
+R101,police,15
+R102,usher,10
+R103,nurse,20
+R104,janitor,15
+R105,food service,10
