@@ -1,0 +1,15 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "test",
+            "dialect": "MySQL",
+            "isActive": false,
+            "isConnected": false,
+            "name": "docker-mysql",
+            "password": "example",
+            "port": 3306,
+            "server": "localhost",
+            "username": "root"
+        }
+    ]
+}
