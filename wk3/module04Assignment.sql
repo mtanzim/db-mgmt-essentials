@@ -1,3 +1,4 @@
+-- PRACTICE PROBLEMS
 -- problem 1
 select CUSTNO,CUSTNAME,PHONE,CITY from CUSTOMER;
 -- problem 2
@@ -27,3 +28,6 @@ from EVENTPLANLINE
 where LOCNO='L100'
 group by PLANNO
 having count(LINENO) > 1;
+
+
+-- ASSIGNMENT PROBLEMS
