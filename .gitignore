@@ -1,3 +1,4 @@
 *.doc#
 *.tar
 *:Zone.Identifier
+*~lock.*
