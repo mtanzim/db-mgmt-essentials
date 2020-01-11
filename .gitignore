@@ -2,3 +2,4 @@
 *.tar
 *:Zone.Identifier
 *~lock.*
+.DS_Store
