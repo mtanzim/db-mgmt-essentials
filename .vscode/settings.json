@@ -10,15 +10,6 @@
             "port": 3306,
             "server": "localhost",
             "username": "root"
-        },
-        {
-            "database": "test",
-            "dialect": "MySQL",
-            "name": "docker-vm-mysql",
-            "password": "example",
-            "port": 3306,
-            "server": "192.168.99.100",
-            "username": "root"
         }
     ]
 }
