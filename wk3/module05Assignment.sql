@@ -89,19 +89,22 @@ WHERE
 INSERT INTO FACILITY
 VALUES
   ('F104', 'Swimming Pool');
--- SELECT
-  --   *
-  -- from FACILITY;
+SELECT
+    *
+  from FACILITY;
   -- P2
 INSERT INTO LOCATION
 VALUES
   ('L107', 'F104', 'Door');
--- SELECT
-  --   *
-  -- from LOCATION;
+SELECT
+    *
+  from LOCATION;
+  -- P3
 INSERT INTO LOCATION
 VALUES
   ('L108', 'F104', 'Locker Room');
+  -- P4
+
 UPDATE LOCATION
 SET
   LOCNAME = 'Gate'

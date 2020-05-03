@@ -1,0 +1,50 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2512
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\froman\fcharset0 Times-Italic;
+}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww18700\viewh18780\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \ul \ulc0 Problem 3\
+\
+\pard\pardeftab720\li360\fi-360\ri-618\sl480\slmult1\partightenfactor0
+\ls1\ilvl0
+\f1 \cf0 \ulnone  3.	You should determine if the 
+\f2\i Student
+\f1\i0 , 
+\f2\i Lender
+\f1\i0 , and 
+\f2\i Institution
+\f1\i0  tables are in BCNF. In the 
+\f2\i Lender
+\f1\i0  table, 
+\f2\i LenderName 
+\f1\i0 is unique. In the 
+\f2\i Institution
+\f1\i0  table, 
+\f2\i InstName
+\f1\i0  is unique. In the 
+\f2\i Student
+\f1\i0  table, 
+\f2\i StdEmail
+\f1\i0  is unique. The primary key of each table is underlined. The primary key of each table is underlined. You should explain your decision and modify the table design by splitting tables or adding constraints if necessary.\
+\pard\pardeftab720\li360\ri-618\partightenfactor0
+\cf0 Student (\ul \ulc0 StdNo\ulnone , StdName, StdEmail, StdAddress, StdCity, StdState, StdZip )\
+\pard\tx900\pardeftab720\li360\ri-618\sl240\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li360\ri-618\sl480\slmult1\partightenfactor0
+\cf0 Lender(\ul \ulc0 LenderNo\ulnone , LenderName)\
+Institution(\ul \ulc0 InstNo\ulnone , InstName, InstMascot)
+\f0 \ul \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \ulc0 \
+Solution\
+\
+\ulnone The Student table is not in BCNF. This is because StdZip can determine StdAddress, StdState, and StdCity.\
+To resolve this, one may split the Student table into Student, and Address tables. Here, the address table can have the StdZip as the PK.\
+The StudentNo can be a FK in the address table.\
+Lender and Institution tables are in BCNF. However, LenderName can determine LenderNo, and InstName can determine InstNo. This is allowed and is encouraged in the merge table process to avoid creating too many tables.\
+}
